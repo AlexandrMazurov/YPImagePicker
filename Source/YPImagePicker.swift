@@ -164,6 +164,7 @@ override open func viewDidLoad() {
 extension YPImagePicker: ImagePickerDelegate {
     
     func noPhotos() {
+        self.loadingView.toggleLoading()
         self.imagePickerDelegate?.noPhotos()
     }
     
