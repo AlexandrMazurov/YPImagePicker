@@ -171,6 +171,7 @@ open class YPImagePicker: UINavigationController {
 
 extension YPImagePicker: YPPickerVCDelegate {
     func libraryHasNoItems() {
+        self.loadingView.toggleLoading()
         self.imagePickerDelegate?.imagePickerHasNoItemsInLibrary(self)
     }
     
