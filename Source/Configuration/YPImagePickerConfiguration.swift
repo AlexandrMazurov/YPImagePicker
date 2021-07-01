@@ -274,7 +274,7 @@ public struct YPConfigVideo {
     public var videoDurationTooLongClosure: (() -> Void)?
     
     /// Calls when user selected video with duration less then minimumTimeLimit
-    public var videoDurationShortLongClosure: (() -> Void)?
+    public var videoDurationTooShortClosure: (() -> Void)?
 }
 
 /// Encapsulates gallery specific settings.

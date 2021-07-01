@@ -369,7 +369,7 @@ public class YPLibraryVC: UIViewController, YPPermissionCheckable {
             DispatchQueue.main.async {
                 let alertInfoClosure = tooLong
                     ? YPConfig.video.videoDurationTooLongClosure
-                    : YPConfig.video.videoDurationShortLongClosure
+                    : YPConfig.video.videoDurationTooShortClosure
                 
                 guard alertInfoClosure == nil else {
                     alertInfoClosure?()
